@@ -98,10 +98,13 @@ Por ende la integral externa corresponde a η y η estará variando desde 0 hast
 Mientras que la integral interna corresponde a ξ, la cual va desde 0 hasta la recta
 
 η = mξ + b
+
 1 = m(0) + b -> b = 1
+
 0 = m(1) + 1 -> m = -1
 
 η = -ξ + 1
+
 ξ = 1 - η
 
 ## 15.  Al integrar el término correspondiente a la matriz de coeficientes (el que contiene las variaciones espaciales de N), ¿cuáles fueron los problemas descubiertos? ¿Por qué constituyen un problema? ¿Qué conceptos se utilizaron para resolverlos?

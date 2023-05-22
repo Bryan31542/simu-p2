@@ -115,3 +115,47 @@ Entonces se aplica el Jacobiano inverso J^-1 para lograr (∂/∂ξ) y (∂/∂�
 Lo que permite continuar con el proceso de integración en un mismo eje de coordenadas
 
 ## 16. Reflexione, ¿es más probable en 2D que las K y las b locales sean diferentes entre elementos?
+
+Si, es más probable. Esto ocurre debido a la tabla de conectividad, ya que puede ser elaborada de muchas maneras, siempre y cuando se respete la orientación. Además, cada elemento ahora tendrá un área y jacobiano distinto para armar la matriz **K** y un **J** distinto para la matriz **b**
+
+## 17. ¿Qué problema se presentó relacionado a la notación de super-índices?
+
+![one](./img/1.png)
+
+Es posible que existe una confusión cuando se hable de un elemento local, entonces
+
+**J^2** es sustituido por **J \* J**, lo que permite que ahora cada super índice sea utilizado para denotar el número del elemento.
+
+## 18. Para el área de un triángulo, ¿por qué no usamos la fórmula tradicional de (base\*altura)/2?
+
+Debido a que en el MEF los triángulos están siendo definidos a través de sus vértices y no de su base y altura.
+
+Por se procede a utilizar la siguiente fórmula que contempla (x1, y1), (x2, y2) y (x3, y3)
+
+![two](./img/2.png)
+
+## 19.  Al utilizar la notación de barras (| |), ¿cómo diferenciamos si se trata de un valor absoluto o el determinante de una matriz?
+
+Haciendo uso de la palabra *abs* antes de las barras | |
+
+## 20. ¿Por qué, a pesar de lo distinto que se conforma la K con respecto a 1D, siempre queda simétrica?
+
+## 21.  En sus palabras, ¿por qué el proceso de ensamblaje es básicamente el mismo en 2D en comparación a 1D?
+
+Debido a que dicho proceso de ensamblaje se realiza a partir de una tabla de conectividad. Además, el MEF indica una serie de pasos a seguir, por ende los pasos serán los mismos sin importar las dimensiones del fenómeno.
+
+## 22. ¿Cuáles con las consideraciones adicionales a tomar en cuenta en el ensamblaje 2D?
+
+Que las ahora los elementos ya no son contiguos, por ende hay que prestan mucha atención a los indices de la matriz contrastando con la tabla de conectividad 
+
+## 23. ¿Por qué el proceso de aplicación de las condiciones de contorno es básicamente el mismo en 2D en comparación a 1D?
+
+Debido a que se está utilizando el MEF y se siguen sus pasos. El cambio que puede surgir es la cantidad de nodos a los que se le aplican dichas condiciones de contorno, ya que puede ser mayor a 1.
+
+## 24. ¿Cuáles con las consideraciones adicionales a tomar en cuenta en el proceso de aplicación de las condiciones de contorno en 2D?
+
+Que ahora aumenta en número de nodos en los que pueden ser aplicadas las condiciones, lo que indica que es posible eliminar más de una fila por **Dirichlet** y la matriz que se suma al lado derecho puede tener más de un elemento no nulo debido a **Neumann**
+
+## 25. ¿Por qué es importante la interpretación de resultados?
+
+Porque el MEF unicamente nos brinda datos. Es necesario analizarlos e interpretarlos para comprender el fenómeno que se esta analizando.

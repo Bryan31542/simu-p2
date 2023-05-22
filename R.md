@@ -86,6 +86,8 @@ Es utilizado en el MEF para realizar la transformación entre el espacio físico
 
 ## 13. ¿Para qué se llevó a cabo la interpolación de las variables espaciales X e Y?
 
+//TODO: tiene que ver con el jacobiano 
+
 ## 14. ¿Cómo se definieron los límites de integración de las integrales dobles del proceso del MEF? ¿Por qué son esos valores y no otros?
 
 Ahora el diferencial es
@@ -128,15 +130,15 @@ Es posible que existe una confusión cuando se hable de un elemento local, enton
 
 ## 18. Para el área de un triángulo, ¿por qué no usamos la fórmula tradicional de (base\*altura)/2?
 
-Debido a que en el MEF los triángulos están siendo definidos a través de sus vértices y no de su base y altura.
+Si se intentará utilizar las fórmula de base por altura se necesita establecer vectores desde cada uno de los vertices del triángulo y buscar que dichos vectores se interceptados y que sean perpendiculares entre ellos. Lo que convierte el proceso en algo muy tedioso y extenso de realizar.
 
-Por se procede a utilizar la siguiente fórmula que contempla (x1, y1), (x2, y2) y (x3, y3)
+Por ende, se procede a utilizar la siguiente fórmula que contempla (x1, y1), (x2, y2) y (x3, y3), ya que desde un inicio se conocen los vertices de cada triángulo
 
 ![two](./img/2.png)
 
 ## 19.  Al utilizar la notación de barras (| |), ¿cómo diferenciamos si se trata de un valor absoluto o el determinante de una matriz?
 
-Haciendo uso de la palabra *abs* antes de las barras | |
+Se trata de un valor absoluto cuando el contenido sea un escalar, mientras que se hace referencia al determinante de una matriz si el contenido es una **matriz** 
 
 ## 20. ¿Por qué, a pesar de lo distinto que se conforma la K con respecto a 1D, siempre queda simétrica?
 

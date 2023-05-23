@@ -70,23 +70,25 @@ Y el sistema de las funciones de forma se encuentra en (ξ, η)
 
 Por ende, es necesario introducir una transformación espacial, para ello hay que multiplicar una matriz por cada uno de los nodos de nuestro triángulo dicha matriz será denominada
 
-Jacobiano
+Jacobian
 
 ## 10. Describa un proceso de transformación espacial en 2D
 
-## 11. ¿Qué representa un Jacobiano? ¿Qué contiene?
+## 11. ¿Qué representa un Jacobian? ¿Qué contiene?
 
 Representa la relación que existe entre las coordenadas originales en (x, y) y las coordenadas transformadas en (ξ, η).
 
-El Jacobiano se calcula como la matriz de derivadas parciales de las coordenadas físicas respecto a las coordenadas paramétricas
+El Jacobian se calcula como la matriz de derivadas parciales de las coordenadas físicas respecto a las coordenadas paramétricas
 
-## 12. ¿Para qué se utiliza el Jacobiano en el MEF?
+## 12. ¿Para qué se utiliza el Jacobian en el MEF?
 
 Es utilizado en el MEF para realizar la transformación entre el espacio físico y el espacio paramétrico, calcular derivadas espaciales, y realizar integración numérica en el dominio paramétrico. Es una herramienta clave para relacionar la geometría física del problema con la formulación matemática del MEF y obtener soluciones precisas y confiables.
 
 ## 13. ¿Para qué se llevó a cabo la interpolación de las variables espaciales X e Y?
 
-//TODO: tiene que ver con el jacobiano 
+//TODO: tiene que ver con el Jacobian
+
+El Jacobian actúa como un factor de escala que permite mover o transformar las coordenadas del plano (x, y) al plano (ξ, η). Además, es una transformación linar y debido en el área no nos interesa los signos negativos de la reflexión se utilizan el valor absoluto del Jacobian
 
 ## 14. ¿Cómo se definieron los límites de integración de las integrales dobles del proceso del MEF? ¿Por qué son esos valores y no otros?
 
@@ -112,13 +114,13 @@ Mientras que la integral interna corresponde a ξ, la cual va desde 0 hasta la r
 
 Ya que ∇N corresponde a las derivadas parciales con respecto a (x, y) y nuestra matriz de funciones de forma se encuentra en otro sistema de coordenadas (ξ, η) el resultado de dicha derivación da cero.
 
-Entonces se aplica el Jacobiano inverso J^-1 para lograr (∂/∂ξ) y (∂/∂η)
+Entonces se aplica el Jacobian inverso J^-1 para lograr (∂/∂ξ) y (∂/∂η)
 
 Lo que permite continuar con el proceso de integración en un mismo eje de coordenadas
 
 ## 16. Reflexione, ¿es más probable en 2D que las K y las b locales sean diferentes entre elementos?
 
-Si, es más probable. Esto ocurre debido a la tabla de conectividad, ya que puede ser elaborada de muchas maneras, siempre y cuando se respete la orientación. Además, cada elemento ahora tendrá un área y jacobiano distinto para armar la matriz **K** y un **J** distinto para la matriz **b**
+Si, es más probable. Esto ocurre debido a la tabla de conectividad, ya que puede ser elaborada de muchas maneras, siempre y cuando se respete la orientación. Además, cada elemento ahora tendrá un área y Jacobian distinto para armar la matriz **K** y un **J** distinto para la matriz **b**
 
 ## 17. ¿Qué problema se presentó relacionado a la notación de super-índices?
 

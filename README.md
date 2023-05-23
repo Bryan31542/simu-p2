@@ -144,6 +144,8 @@ Se trata de un valor absoluto cuando el contenido sea un escalar, mientras que s
 
 ## 20. ¿Por qué, a pesar de lo distinto que se conforma la K con respecto a 1D, siempre queda simétrica?
 
+Porque se están multiplicando matrices por su transpuesta lo que da como resultado una matriz simétrica
+
 ## 21.  En sus palabras, ¿por qué el proceso de ensamblaje es básicamente el mismo en 2D en comparación a 1D?
 
 Debido a que dicho proceso de ensamblaje se realiza a partir de una tabla de conectividad. Además, el MEF indica una serie de pasos a seguir, por ende los pasos serán los mismos sin importar las dimensiones del fenómeno.
